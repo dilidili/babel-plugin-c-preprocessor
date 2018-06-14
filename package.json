@@ -1,0 +1,28 @@
+{
+  "name": "babel-plugin-c-preprocessor",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:snap": "jest --updateSnapshot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dilidili/babel-plugin-c-preprocessor.git"
+  },
+  "keywords": [
+    "babel-plugin"
+  ],
+  "author": "WenshengXu <takeitallwithyou0102@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dilidili/babel-plugin-c-preprocessor/issues"
+  },
+  "homepage": "https://github.com/dilidili/babel-plugin-c-preprocessor#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.1",
+    "jest": "^23.1.0"
+  }
+}
