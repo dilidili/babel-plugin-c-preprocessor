@@ -1,28 +1,33 @@
 {
-  "name": "babel-plugin-c-preprocessor",
+  "name": "macro-preprocessor-loader",
   "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "description": "The c style macro preprocessor for webpack",
+  "main": "build/main.js",
   "scripts": {
     "test": "jest",
-    "test:snap": "jest --updateSnapshot"
+    "test:snap": "jest --updateSnapshot",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dilidili/babel-plugin-c-preprocessor.git"
+    "url": "git+https://github.com/dilidili/macro-preprocessor-loader"
   },
   "keywords": [
-    "babel-plugin"
+    "webpack loader",
+    "c preprocessor"
   ],
-  "author": "WenshengXu <takeitallwithyou0102@gmail.com>",
+  "author": "Wensheng Xu <takeitallwithyou0102@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/dilidili/babel-plugin-c-preprocessor/issues"
+    "url": "https://github.com/dilidili/macro-preprocessor-loader"
   },
-  "homepage": "https://github.com/dilidili/babel-plugin-c-preprocessor#readme",
+  "homepage": "https://github.com/dilidili/macro-preprocessor-loader",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-jest": "^23.0.1",
-    "jest": "^23.1.0"
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.1.0",
+    "webpack": "^4.12.0"
   }
 }
