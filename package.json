@@ -2,7 +2,7 @@
   "name": "macro-preprocessor-loader",
   "version": "0.0.2",
   "description": "The c style macro preprocessor for webpack",
-  "main": "build/main.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "jest",
     "test:snap": "jest --updateSnapshot",
