@@ -1,6 +1,7 @@
 const os = require('os')
 
 const IF_REGEX = /^\/\/#if (.*)/
+const ELIF_REGEX = /^\/\/#elif (.*)/
 const ELSE_REGEX = /^\/\/#else$/
 const ENDIF_REGEX = /^\/\/#endif$/
 
@@ -44,6 +45,24 @@ module.exports = (source) => {
         stack.push({
           tag: 'IF',
           condition: !lastIf.condition,
+        })
+      }
+    } else if (predicate = ELIF_REGEX.exec(line)) {
+      if (last && last.tag === 'IF') {
+        // #elif
+        const lastIf = stack.pop()
+
+        let condition = false
+        try {
+          condition = geval(predicate[1])
+        } catch(err) {
+          console.error(err)
+          condition = false
+        }
+
+        stack.push({
+          tag: 'IF',
+          condition,
         })
       }
     } else {

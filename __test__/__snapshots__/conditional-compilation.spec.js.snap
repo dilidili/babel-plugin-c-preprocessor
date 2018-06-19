@@ -1,5 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`elif 1`] = `
+"console.log('visible')
+"
+`;
+
 exports[`if else 1`] = `
 "console.log('visible')
 "

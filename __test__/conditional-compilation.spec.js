@@ -15,3 +15,9 @@ test('if else', () => {
 
 	expect(actual).toMatchSnapshot()
 })
+
+test('elif', () => {
+	const actual = loader(fs.readFileSync(join(fixturesDir, 'elif.js'), 'utf8'))
+
+	expect(actual).toMatchSnapshot()
+})
