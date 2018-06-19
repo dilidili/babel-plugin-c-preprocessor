@@ -1,6 +1,6 @@
 {
   "name": "macro-preprocessor-loader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The c style macro preprocessor for webpack",
   "main": "src/index.js",
   "scripts": {
