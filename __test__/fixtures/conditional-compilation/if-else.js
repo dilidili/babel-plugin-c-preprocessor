@@ -1,6 +1,7 @@
-//#if false
+//#if 3>5
 function a() {
 	console.log('invisilble')
 }
-//#endif
+//#else
 console.log('visible')
+//#endif

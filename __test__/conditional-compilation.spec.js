@@ -10,8 +10,8 @@ test('single if', () => {
 	expect(actual).toMatchSnapshot()
 })
 
-// test('if with else', () => {
-// 	const actual = loader(fs.readFileSync(join(fixturesDir, 'if-else.js'), 'utf8'))
-//
-// 	expect(actual).toMatchSnapshot()
-// })
+test('if else', () => {
+	const actual = loader(fs.readFileSync(join(fixturesDir, 'if-else.js'), 'utf8'))
+
+	expect(actual).toMatchSnapshot()
+})
